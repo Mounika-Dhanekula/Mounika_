@@ -1,0 +1,18 @@
+# 1D Array
+import numpy as np
+arr = np.array([12, 4, 56, 17, 8, 99, 34])
+sorted_arr = np.sort(arr)
+print("Sorted array:", sorted_arr)
+
+# 2D Array
+import numpy as np
+arr = np.array([[1,8 17],[ 8, 99, 34]])  
+sorted_arr = np.sort(arr)
+print("Sorted array:", sorted_arr)
+
+# 3D Array
+import numpy as np
+arr_3d = np.array([[12, 4, 56],[17, 8, 99],[34, 1, 23]])
+sorted_3d = np.sort(arr_3d, axis=-1)
+print("Original 3D Array:\n", arr_3d)
+print("Sorted 3D Array (along last axis):\n", sorted_3d)
