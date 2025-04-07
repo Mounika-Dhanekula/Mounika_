@@ -1,0 +1,16 @@
+print("Hello! I'm PyBot. Type 'bye' to exit.")
+
+while True:
+    user_input = input("You: ").strip().lower()
+
+    if user_input in ["hi", "hello"]:
+        print("PyBot: Hello there! How can I help you today?")
+    elif "how are you" in user_input:
+        print("PyBot: I'm just code, but I'm feeling pretty good!")
+    elif "your name" in user_input:
+        print("PyBot: I'm PyBot, your Python-powered assistant.")
+    elif user_input in ["bye", "exit", "quit"]:
+        print("PyBot: Goodbye! Have a great day!")
+        break
+    else:
+        print("PyBot: I'm still learning. Could you ask something else?")
