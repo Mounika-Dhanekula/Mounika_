@@ -1,0 +1,16 @@
+import pandas as pd
+names = ['Alice', 'Bob', 'Charles', 'David']
+age = [24, 22, 21, 23]
+department = ['HR', 'Finance', 'IT', 'Marketing']
+salary = [52000, 60000, 55000, 58000]
+
+df = pd.DataFrame({
+    'Name': names,
+    'Age': age,
+    'Department': department,
+    'Salary': salary
+})
+print(df)
+print(df.loc[0])
+print(df['Age'].mean())
+print(df['Department'][1])
